@@ -35,7 +35,7 @@
 
   /* レイアウト */
   --section-padding: clamp(3rem, 8vw, 6rem);
-  --container-width: 1100px;
+  --container-width: 640px;
   --container-padding: clamp(1rem, 4vw, 2rem);
 
   /* SP固定バナー高さ */
@@ -44,6 +44,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #FDF5F8;
 }
 
 body {
@@ -52,6 +53,8 @@ body {
   line-height: 1.8;
   color: var(--color-text);
   background-color: var(--color-bg);
+  max-width: var(--container-width);
+  margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -65,6 +68,10 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+main {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 }
 
 /* =============================================
@@ -1690,91 +1697,6 @@ body {
 }
 
 /* =============================================
-   Responsive — Tablet (768px)
-   ============================================= */
-
-@media (min-width: 768px) {
-  .p-hero__visual {
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  }
-
-  .p-hero__overlay {
-    padding: 40px var(--container-padding) 48px;
-  }
-
-  .p-hero__visual .c-placeholder--hero {
-    min-height: 100vh;
-  }
-
-  .p-hero__photo {
-    margin-top: -200px;
-    max-width: 680px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .p-hero__photo .c-placeholder {
-    min-height: 320px;
-  }
-
-  .p-hero__cta-area {
-    padding: 56px var(--container-padding) 64px;
-  }
-
-  .p-hero__cta {
-    max-width: 480px;
-  }
-
-  /* 適合条件 */
-  .p-qualify__list {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* 症状チェック */
-  .p-symptoms__inner {
-    max-width: 700px;
-  }
-
-  /* 連鎖 + アプローチ */
-  .p-chain__desc-text,
-  .p-chain__desc-sub {
-    max-width: 700px;
-  }
-
-  .p-approach__card {
-    max-width: 180px;
-    padding: 24px 16px;
-  }
-
-  .p-approach__cards {
-    gap: 8px;
-  }
-
-  /* 8回の処方箋 */
-  .p-program__inner {
-    max-width: 680px;
-  }
-
-  .p-program__steps {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* 利用料金 */
-  .p-price__inner {
-    max-width: 680px;
-  }
-
-  /* 比較アンカー */
-  .p-compare__inner {
-    max-width: 680px;
-  }
-}
-
-/* =============================================
    Responsive — PC (1024px)
    ============================================= */
 
@@ -1786,105 +1708,5 @@ body {
 
   body {
     padding-bottom: 0;
-  }
-
-  /* ヘッダー */
-  .l-header__inner {
-    padding: 12px var(--container-padding);
-  }
-
-  /* ファーストビュー */
-  .p-hero__visual {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  }
-
-  .p-hero__visual .c-placeholder--hero {
-    min-height: 100vh;
-  }
-
-  .p-hero__overlay {
-    padding: 48px var(--container-padding) 64px;
-  }
-
-  .p-hero__content {
-    max-width: var(--container-width);
-    margin: 0 auto;
-  }
-
-  .p-hero__cta-area {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 64px var(--container-padding) 72px;
-  }
-
-  .p-hero__photo {
-    margin-top: -160px;
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .p-hero__photo .c-placeholder {
-    min-height: 400px;
-  }
-
-  .p-hero__cta {
-    max-width: 520px;
-  }
-
-  /* 適合条件 */
-  .p-qualify__inner {
-    max-width: 640px;
-  }
-
-  /* 症状チェック */
-  .p-symptoms__inner {
-    max-width: 800px;
-  }
-
-  .c-placeholder--illust {
-    min-height: 200px;
-  }
-
-  /* 連鎖 + アプローチ */
-  .p-chain__icons {
-    gap: 16px;
-  }
-
-  .p-chain__desc-text,
-  .p-chain__desc-sub {
-    max-width: 800px;
-  }
-
-  .p-approach__card {
-    max-width: 200px;
-    padding: 32px 20px;
-  }
-
-  .p-approach__cards {
-    gap: 12px;
-  }
-
-  /* 8回の処方箋 */
-  .p-program__inner {
-    max-width: 760px;
-  }
-
-  .p-program__steps {
-    max-width: 520px;
-  }
-
-  /* 利用料金 */
-  .p-price__inner {
-    max-width: 760px;
-  }
-
-  /* ユーティリティ */
-  .u-sp-only {
-    display: none;
-  }
-
-  .u-pc-only {
-    display: block;
   }
 }
