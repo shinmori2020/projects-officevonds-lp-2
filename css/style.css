@@ -1059,6 +1059,632 @@ body {
   color: var(--color-primary);
 }
 
+/* ----- 返金保証 ----- */
+.p-guarantee {
+  background-color: #F5F5F5;
+  padding: var(--section-padding) var(--container-padding);
+}
+
+.p-guarantee__inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-guarantee__heading {
+  font-family: var(--font-family-mincho);
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.p-guarantee__text {
+  font-family: var(--font-family-base);
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.p-guarantee__note {
+  font-family: var(--font-family-base);
+  font-size: var(--fz-body);
+  font-weight: 700;
+}
+
+/* ----- 利用者の変化 ----- */
+.p-results {
+  background-color: #EC77AB;
+  padding: var(--section-padding) var(--container-padding);
+  padding-bottom: calc(var(--section-padding) + 80px);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), 0 100%);
+}
+
+.p-results__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.p-results__heading {
+  font-family: var(--font-family-base);
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+  font-weight: 900;
+  color: var(--color-text-white);
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+.p-results__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.p-results__card {
+  position: relative;
+  border-radius: 6px;
+  overflow: visible;
+}
+
+.c-placeholder--result {
+  min-height: 240px;
+  border-radius: 6px;
+}
+
+.p-results__caption {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  color: var(--color-text-white);
+  font-family: var(--font-family-mincho);
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+  -webkit-text-stroke: 6px #EC77AB;
+  paint-order: stroke fill;
+}
+
+/* ----- CTA② ----- */
+.p-cta2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.p-cta2__bg {
+  min-height: auto;
+}
+
+.p-cta2__overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.35);
+  padding: var(--section-padding) var(--container-padding);
+}
+
+.p-cta2__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-text-white);
+}
+
+.p-cta2__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.p-cta2__heading-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family-base);
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.p-cta2__deco {
+  font-size: clamp(5rem, 18vw, 8rem);
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.p-cta2__deco--left {
+  align-self: flex-start;
+}
+
+.p-cta2__deco--right {
+  align-self: flex-end;
+}
+
+.p-cta2 .c-btn--primary {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #E91E8C;
+  box-shadow: 0 4px 12px rgba(233, 30, 140, 0.3);
+}
+
+/* ----- 特典 ----- */
+.p-benefits {
+  background-color: #fff;
+  padding: var(--section-padding) var(--container-padding);
+}
+
+.p-benefits__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.p-benefits__heading {
+  font-family: var(--font-family-mincho);
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+.p-benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.p-benefits__group {
+  margin-bottom: 8px;
+}
+
+.p-benefits__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.p-benefits__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.p-benefits__badge-label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.p-benefits__badge-num {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.p-benefits__body {
+  flex: 1;
+}
+
+.p-benefits__title {
+  font-family: var(--font-family-base);
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.p-benefits__title em {
+  font-style: normal;
+}
+
+.p-benefits__desc {
+  width: 100%;
+  font-size: var(--fz-small);
+  color: var(--color-text-light);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ----- よくある質問 ----- */
+.p-faq {
+  background-color: #F5F5F5;
+  padding: var(--section-padding) var(--container-padding);
+  padding-top: calc(var(--section-padding) + 80px);
+  padding-bottom: calc(var(--section-padding) + 80px);
+  clip-path: polygon(0 80px, 100% 0, 100% calc(100% - 80px), 0 100%);
+}
+
+.p-faq__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.p-faq__heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.p-faq__heading::before,
+.p-faq__heading::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+.p-faq__heading span {
+  font-family: var(--font-family-mincho);
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.p-faq__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-faq__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.p-faq__item:first-child {
+  border-top: 1px dashed var(--color-border);
+}
+
+.p-faq__num {
+  font-family: var(--font-family-mincho);
+  font-size: clamp(1.75rem, 7vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.p-faq__content {
+  flex: 1;
+}
+
+.p-faq__question {
+  font-family: var(--font-family-base);
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.p-faq__answer {
+  font-family: var(--font-family-base);
+  font-size: var(--fz-body);
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* ----- 最終CTA ----- */
+.p-final-cta {
+  background-color: transparent;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.p-final-cta__border {
+  border: 6px solid #E51F5E;
+  overflow: hidden;
+}
+
+.p-final-cta__visual {
+  position: relative;
+  overflow: hidden;
+}
+
+.p-final-cta__visual {
+  position: relative;
+}
+
+.p-final-cta__visual .c-placeholder {
+  position: absolute;
+  inset: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+.p-final-cta__overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px var(--container-padding);
+}
+
+.p-final-cta__content {
+  text-align: center;
+  padding: 24px var(--container-padding);
+}
+
+.p-final-cta__message {
+  font-family: var(--font-family-base);
+  font-size: clamp(1.375rem, 5.5vw, 2rem);
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.p-final-cta__em {
+  color: #E51F5E;
+  font-style: normal;
+  font-size: 1.3em;
+  text-decoration: underline;
+  text-decoration-color: #E51F5E;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.p-final-cta__accent {
+  color: #E51F5E;
+  font-style: normal;
+}
+
+.p-qualify--repeat {
+  background-color: var(--color-bg);
+}
+
+.p-qualify--repeat .p-qualify__heading {
+  color: var(--color-text);
+}
+
+.p-final-cta__btn-area {
+  position: relative;
+  z-index: 3;
+  padding: 0 var(--container-padding) 24px;
+}
+
+.p-final-cta__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background-color: #E51F5E;
+  box-shadow: 0 4px 16px rgba(229, 31, 94, 0.3);
+  line-height: 1.4;
+}
+
+.p-final-cta__btn-sub {
+  font-size: var(--fz-btn);
+  font-weight: 700;
+}
+
+.p-final-cta__btn-main {
+  font-size: var(--fz-btn);
+  font-weight: 700;
+}
+
+/* ----- 店舗情報 ----- */
+.p-shop {
+  background-color: #F5F5F5;
+  padding: var(--section-padding) var(--container-padding);
+  padding-top: calc(var(--section-padding) + 120px);
+  clip-path: polygon(0 120px, 100% 0, 100% 100%, 0 100%);
+  position: relative;
+}
+
+.p-shop__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-shop__logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -130px;
+  padding-top: 24px;
+}
+
+.p-shop__logo .c-placeholder--hero-logo {
+  width: 140px;
+  min-height: 140px;
+}
+
+.p-shop__name {
+  font-family: var(--font-family-base);
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+.p-shop__info {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.p-shop__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.p-shop__row:first-child {
+  border-top: 1px dashed var(--color-border);
+}
+
+.p-shop__label {
+  font-family: var(--font-family-base);
+  font-size: var(--fz-body);
+  font-weight: 700;
+  color: var(--color-primary);
+  min-width: 5em;
+  flex-shrink: 0;
+}
+
+.p-shop__value {
+  font-family: var(--font-family-base);
+  font-size: var(--fz-body);
+  line-height: 1.6;
+}
+
+.p-shop__link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.p-shop-map {
+  padding: var(--section-padding) var(--container-padding);
+  background-color: var(--color-bg);
+}
+
+.p-shop-map__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-shop__map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
+  padding: 16px 24px;
+  border: 2px solid #E51F5E;
+  border-radius: 8px;
+  color: #E51F5E;
+  font-weight: 700;
+  font-size: var(--fz-btn);
+  transition: opacity 0.2s ease;
+}
+
+.p-shop__map-btn:hover {
+  opacity: 0.7;
+}
+
+/* ----- フッター ----- */
+.l-footer__upper {
+  padding: var(--section-padding) var(--container-padding);
+  border-top: 2px dashed var(--color-primary);
+  border-bottom: 2px dashed var(--color-primary);
+  background-color: #F5F5F5;
+}
+
+.l-footer__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.l-footer__heading {
+  font-family: var(--font-family-base);
+  font-size: var(--fz-body);
+  font-weight: 400;
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+}
+
+.l-footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.l-footer__link-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.l-footer__link-item a {
+  font-size: var(--fz-body);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.l-footer__link-item a::before {
+  content: "›";
+  font-size: 1.6em;
+  color: var(--color-primary);
+  margin-right: 4px;
+  line-height: 1;
+  transform: translateY(-3px);
+}
+
+.l-footer__sns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.l-footer__sns-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-bg-gray);
+  transition: opacity 0.2s ease;
+}
+
+.l-footer__sns-link:hover {
+  opacity: 0.7;
+}
+
+.l-footer__bottom {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-white);
+  text-align: center;
+  padding: 24px var(--container-padding);
+}
+
+.l-footer__shop-name {
+  font-size: var(--fz-body);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.l-footer__copyright {
+  font-size: var(--fz-small);
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+
+.l-footer__company {
+  font-size: var(--fz-small);
+  opacity: 0.8;
+}
+
 .u-font-mincho {
   font-family: var(--font-family-mincho);
 }
