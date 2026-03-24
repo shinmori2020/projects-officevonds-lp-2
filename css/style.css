@@ -458,17 +458,17 @@ main {
 
 .p-qualify__heading {
   font-family: var(--font-family-mincho);
-  font-size: clamp(1.625rem, 6.5vw, 2.5rem);
+  font-size: clamp(1.375rem, 6.5vw, 2.5rem);
   font-weight: 700;
   color: #EC77AB;
   line-height: 1.4;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .p-qualify__list {
   list-style: none;
   text-align: left;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
@@ -1437,30 +1437,37 @@ main {
 .p-final-cta__visual {
   position: relative;
   overflow: hidden;
-}
-
-.p-final-cta__visual {
-  position: relative;
-}
-
-.p-final-cta__visual .c-placeholder {
-  position: absolute;
-  inset: 0;
-  min-height: 100%;
-  width: 100%;
-}
-
-.p-final-cta__overlay {
-  position: relative;
-  z-index: 2;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 40px var(--container-padding);
+  border: 6px solid #E51F5E;
+}
+
+.p-final-cta__photo {
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  max-width: 180px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 1;
+}
+
+.p-final-cta__photo--left {
+  left: 0;
+}
+
+.p-final-cta__photo--right {
+  right: 0;
+  height: 100%;
+  width: 30%;
 }
 
 .p-final-cta__content {
+  position: relative;
+  z-index: 2;
   text-align: center;
   padding: 24px var(--container-padding);
 }
