@@ -28,14 +28,7 @@
     <div class="l-header__inner">
       <h1 class="l-header__logo">
         <a href="/">
-          <!-- ロゴ画像（後日差し替え） -->
-          <div class="c-placeholder c-placeholder--header-logo">
-            <svg class="c-placeholder__icon" aria-hidden="true" width="28" height="28" viewBox="0 0 48 48" fill="none" stroke="#E91E8C" stroke-width="1.5">
-              <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-              <circle cx="36" cy="12" r="5"/>
-            </svg>
-            <span class="c-placeholder__text">本気ストレッチ<br><small>MAJI STRETCH</small></span>
-          </div>
+          <img src="images/logo.png" alt="本気ストレッチ MAJI STRETCH" class="l-header__logo-img" width="200" height="40">
         </a>
       </h1>
     </div>
@@ -46,25 +39,13 @@
     <section class="p-hero">
       <!-- ヒーロー画像エリア -->
       <div class="p-hero__visual">
-        <div class="c-placeholder c-placeholder--hero">
-          <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-            <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-            <circle cx="36" cy="12" r="5"/>
-          </svg>
-          <p class="c-placeholder__text">メインビジュアル（施術写真）</p>
-        </div>
+        <img src="images/mv_bg.png" alt="本気ストレッチ 施術風景" class="p-hero__img" width="640" height="960">
         <!-- テキストオーバーレイ -->
         <div class="p-hero__overlay">
           <div class="p-hero__content">
             <!-- ヒーロー内ロゴマーク -->
             <div class="p-hero__logo-mark">
-              <div class="c-placeholder c-placeholder--hero-logo">
-                <svg class="c-placeholder__icon" aria-hidden="true" width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5">
-                  <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                  <circle cx="36" cy="12" r="5"/>
-                </svg>
-                <span class="c-placeholder__text">MAJI STRETCH</span>
-              </div>
+              <img src="images/logo_p.png" alt="MAJI STRETCH" class="p-hero__logo-img" width="120" height="120">
             </div>
             <p class="p-hero__lead">甲府で3ヶ月以上マッサージに<br>通い続けている方へ。</p>
             <h2 class="p-hero__title">
@@ -81,13 +62,18 @@
 
       <!-- ヒーロー下部：施術写真 -->
       <div class="p-hero__photo">
-        <div class="c-placeholder c-placeholder--wide">
-          <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-            <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-            <circle cx="36" cy="12" r="5"/>
-          </svg>
-          <p class="c-placeholder__text">施術中の写真（2人）</p>
+        <!-- 口コミバナー -->
+        <div class="p-hero__review">
+          <div class="p-hero__review-inner">
+            <img src="images/icon.png" alt="Google口コミ評価4.9" class="p-hero__review-icon" width="80" height="80">
+            <div class="p-hero__review-body">
+              <p class="p-hero__review-title">満足度98%超え！</p>
+              <p class="p-hero__review-text">Googleロコミ評価☆4.9の<br>圧倒的支持！</p>
+            </div>
+          </div>
         </div>
+        <p class="p-hero__review-note">*2025年10月オープンから2026年3月現在</p>
+        <img src="images/image_01.png" alt="施術中の写真" class="p-hero__photo-img" width="640" height="360" loading="lazy">
       </div>
 
       <!-- CTA①エリア -->
@@ -132,53 +118,28 @@
         <div class="p-symptoms__list">
           <div class="p-symptoms__item">
             <div class="p-symptoms__illust">
-              <div class="c-placeholder c-placeholder--illust">
-                <svg class="c-placeholder__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-                  <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                  <circle cx="36" cy="12" r="5"/>
-                </svg>
-                <p class="c-placeholder__text">イラスト</p>
-              </div>
+              <img src="images/man_image_01.png" alt="首の痛みのイラスト" width="150" height="150" loading="lazy">
             </div>
             <p class="p-symptoms__text">朝から<em class="u-color-primary">重さ</em>が<br>抜けない</p>
-
           </div>
 
           <div class="p-symptoms__item p-symptoms__item--reverse">
             <div class="p-symptoms__illust">
-              <div class="c-placeholder c-placeholder--illust">
-                <svg class="c-placeholder__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-                  <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                  <circle cx="36" cy="12" r="5"/>
-                </svg>
-                <p class="c-placeholder__text">イラスト</p>
-              </div>
+              <img src="images/man_image_02.png" alt="腰痛のイラスト" width="150" height="150" loading="lazy">
             </div>
             <p class="p-symptoms__text">長時間運転後、<br>腰が<em class="u-color-primary">固まる</em></p>
           </div>
 
           <div class="p-symptoms__item">
             <div class="p-symptoms__illust">
-              <div class="c-placeholder c-placeholder--illust">
-                <svg class="c-placeholder__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-                  <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                  <circle cx="36" cy="12" r="5"/>
-                </svg>
-                <p class="c-placeholder__text">イラスト</p>
-              </div>
+              <img src="images/man_image_03.png" alt="肩こりのイラスト" width="150" height="150" loading="lazy">
             </div>
             <p class="p-symptoms__text">肩が<em class="u-color-primary">動きづらい</em></p>
           </div>
 
           <div class="p-symptoms__item p-symptoms__item--reverse">
             <div class="p-symptoms__illust">
-              <div class="c-placeholder c-placeholder--illust">
-                <svg class="c-placeholder__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-                  <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                  <circle cx="36" cy="12" r="5"/>
-                </svg>
-                <p class="c-placeholder__text">イラスト</p>
-              </div>
+              <img src="images/man_image_04.png" alt="繰り返す不調のイラスト" width="150" height="150" loading="lazy">
             </div>
             <p class="p-symptoms__text">もみほぐしをしても<br>すぐ<em class="u-color-primary">戻る</em></p>
           </div>
@@ -193,14 +154,7 @@
 
     <!-- ===== 連鎖を止める + 深層筋説明 + 3つのアプローチ ===== -->
     <section class="p-chain">
-      <!-- 1枚の縦長背景 -->
-      <div class="c-placeholder c-placeholder--bg-tall">
-        <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
-          <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-          <circle cx="36" cy="12" r="5"/>
-        </svg>
-        <p class="c-placeholder__text">背景写真（縦長・施術シーン）</p>
-      </div>
+      <!-- 1枚の縦長背景（CSSで background-image として設定） -->
       <!-- オーバーレイ -->
       <div class="p-chain__overlay">
 
@@ -210,33 +164,8 @@
           <div class="p-chain__icons">
             <div class="p-chain__icon-item">
               <div class="p-chain__icon-circle">
-                <!-- 後日アイコン画像に差し替え -->
-                <svg class="c-placeholder__icon" aria-hidden="true" width="36" height="36" viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5">
-                  <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                  <circle cx="36" cy="12" r="5"/>
-                </svg>
+                <img src="images/Gemini_Generated_Image_48fp5b48fp5b48fp 1.png" alt="固まる・動きが悪い・戻るアイコン" class="p-chain__icon-img" width="240" height="80" loading="lazy">
               </div>
-              <p class="p-chain__icon-label">固まる</p>
-            </div>
-            <div class="p-chain__icon-item">
-              <div class="p-chain__icon-circle">
-                <!-- 後日アイコン画像に差し替え -->
-                <svg class="c-placeholder__icon" aria-hidden="true" width="36" height="36" viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5">
-                  <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                  <circle cx="36" cy="12" r="5"/>
-                </svg>
-              </div>
-              <p class="p-chain__icon-label">動きが悪い</p>
-            </div>
-            <div class="p-chain__icon-item">
-              <div class="p-chain__icon-circle">
-                <!-- 後日アイコン画像に差し替え -->
-                <svg class="c-placeholder__icon" aria-hidden="true" width="36" height="36" viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5">
-                  <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                  <circle cx="36" cy="12" r="5"/>
-                </svg>
-              </div>
-              <p class="p-chain__icon-label">戻る</p>
             </div>
           </div>
         </div>
@@ -276,13 +205,7 @@
       <div class="p-program__inner">
         <!-- 施術写真 -->
         <div class="p-program__photo">
-          <div class="c-placeholder c-placeholder--wide">
-            <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-              <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-              <circle cx="36" cy="12" r="5"/>
-            </svg>
-            <p class="c-placeholder__text">施術写真</p>
-          </div>
+          <img src="images/image_02.png" alt="施術中の写真" class="p-program__photo-img" width="640" height="360" loading="lazy">
         </div>
 
         <!-- 見出し -->
@@ -315,25 +238,17 @@
       <div class="p-price__inner">
         <h2 class="p-price__heading">利用料金</h2>
         <div class="p-price__table">
-          <div class="p-price__row p-price__row--header">
-            <span class="p-price__cell p-price__cell--course">コース</span>
-            <span class="p-price__cell p-price__cell--normal">通常料金</span>
-            <span class="p-price__cell p-price__cell--special">初回特典</span>
-          </div>
           <div class="p-price__row">
             <span class="p-price__cell p-price__cell--course">60分コース</span>
-            <span class="p-price__cell p-price__cell--normal">9,980円</span>
-            <span class="p-price__cell p-price__cell--special p-price__cell--highlight">4,990円</span>
+            <span class="p-price__cell p-price__cell--price"><span class="p-price__label">初回</span>4,990<span class="p-price__yen">円</span></span>
           </div>
           <div class="p-price__row">
             <span class="p-price__cell p-price__cell--course">90分コース</span>
-            <span class="p-price__cell p-price__cell--normal">14,980円</span>
-            <span class="p-price__cell p-price__cell--special p-price__cell--highlight">7,490円</span>
+            <span class="p-price__cell p-price__cell--price"><span class="p-price__label">初回</span>7,490<span class="p-price__yen">円</span></span>
           </div>
           <div class="p-price__row">
             <span class="p-price__cell p-price__cell--course">120分コース</span>
-            <span class="p-price__cell p-price__cell--normal">19,980円</span>
-            <span class="p-price__cell p-price__cell--special p-price__cell--highlight">9,900円</span>
+            <span class="p-price__cell p-price__cell--price"><span class="p-price__label">初回</span>9,900<span class="p-price__yen">円</span></span>
           </div>
         </div>
       </div>
@@ -353,13 +268,7 @@
       </div>
       <!-- 下部：画像背景 + ピンクオーバーレイ -->
       <div class="p-compare__lower">
-        <div class="c-placeholder c-placeholder--bg-tall p-compare__bg">
-          <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5">
-            <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-            <circle cx="36" cy="12" r="5"/>
-          </svg>
-          <p class="c-placeholder__text">背景写真</p>
-        </div>
+        <!-- 背景はCSSで bg_03.png を設定 -->
         <div class="p-compare__lower-overlay">
           <div class="p-compare__inner">
             <p class="p-compare__program-name">本気ストレッチの<br>「根本改善プログラム」</p>
@@ -385,7 +294,7 @@
     <!-- ===== 返金保証 ===== -->
     <section class="p-guarantee">
       <div class="p-guarantee__inner">
-        <h2 class="p-guarantee__heading">＼返金保証／</h2>
+        <h2 class="p-guarantee__heading">返金保証</h2>
         <p class="p-guarantee__text">3回目終了時点で、<br>同一条件の測定で改善が<br>確認できなければ返金します。</p>
         <p class="p-guarantee__note">※来店規定遵守の場合</p>
       </div>
@@ -393,13 +302,7 @@
 
     <!-- ===== CTA② ===== -->
     <section class="p-cta2">
-      <div class="c-placeholder c-placeholder--bg-tall p-cta2__bg">
-        <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5">
-          <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-          <circle cx="36" cy="12" r="5"/>
-        </svg>
-        <p class="c-placeholder__text">背景写真（施術シーン）</p>
-      </div>
+      <!-- 背景はCSSで bg_04.png を設定 -->
       <div class="p-cta2__overlay">
         <div class="p-cta2__inner">
           <div class="p-cta2__heading">
@@ -421,33 +324,15 @@
         <h2 class="p-results__heading">利用者の<br>驚きの変化続々！</h2>
         <div class="p-results__list">
           <div class="p-results__card">
-            <div class="c-placeholder c-placeholder--result">
-              <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-                <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                <circle cx="36" cy="12" r="5"/>
-              </svg>
-              <p class="c-placeholder__text">ビフォーアフター写真</p>
-            </div>
+            <img src="images/ba_image_01.png" alt="前屈のビフォーアフター" class="p-results__img" width="400" height="300" loading="lazy">
             <p class="p-results__caption">前屈＋10cm！</p>
           </div>
           <div class="p-results__card">
-            <div class="c-placeholder c-placeholder--result">
-              <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-                <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                <circle cx="36" cy="12" r="5"/>
-              </svg>
-              <p class="c-placeholder__text">ビフォーアフター写真</p>
-            </div>
+            <img src="images/ba_image_02.png" alt="肩可動域のビフォーアフター" class="p-results__img" width="400" height="300" loading="lazy">
             <p class="p-results__caption">肩可動域＋15度！</p>
           </div>
           <div class="p-results__card">
-            <div class="c-placeholder c-placeholder--result">
-              <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-                <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                <circle cx="36" cy="12" r="5"/>
-              </svg>
-              <p class="c-placeholder__text">ビフォーアフター写真</p>
-            </div>
+            <img src="images/ba_image_03.png" alt="姿勢角度のビフォーアフター" class="p-results__img" width="400" height="300" loading="lazy">
             <p class="p-results__caption">姿勢角度変化！</p>
           </div>
         </div>
@@ -569,12 +454,9 @@
       <div class="p-final-cta">
         <div class="p-final-cta__border">
           <div class="p-final-cta__visual">
-            <div class="c-placeholder c-placeholder--wide">
-              <svg class="c-placeholder__icon" aria-hidden="true" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#ccc" stroke-width="1.5">
-                <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-                <circle cx="36" cy="12" r="5"/>
-              </svg>
-              <p class="c-placeholder__text">写真（女性2人）</p>
+            <div class="p-final-cta__photos">
+              <img src="images/bg_g_01.png" alt="女性トレーナー" class="p-final-cta__photo" width="200" height="400" loading="lazy">
+              <img src="images/bg_g_02.png" alt="女性トレーナー" class="p-final-cta__photo" width="200" height="400" loading="lazy">
             </div>
             <div class="p-final-cta__overlay">
               <div class="p-final-cta__content">
@@ -618,13 +500,7 @@
     <!-- ===== 店舗情報 ===== -->
     <!-- ロゴ（clip-pathの外に配置） -->
     <div class="p-shop__logo">
-      <div class="c-placeholder c-placeholder--hero-logo">
-        <svg class="c-placeholder__icon" aria-hidden="true" width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5">
-          <path d="M4 38L16 18L24 28L32 14L44 38Z"/>
-          <circle cx="36" cy="12" r="5"/>
-        </svg>
-        <span class="c-placeholder__text">MAJI STRETCH</span>
-      </div>
+      <img src="images/logo_p.png" alt="MAJI STRETCH" class="p-shop__logo-img" width="120" height="120" loading="lazy">
     </div>
     <section class="p-shop">
       <div class="p-shop__inner">
@@ -706,11 +582,6 @@
       <p class="l-footer__company">運営：SANKEN株式会社</p>
     </div>
   </footer>
-
-  <!-- ===== SP固定バナー ===== -->
-  <div class="p-fixed-banner" id="js-fixed-banner">
-    <a href="tel:05088848993" class="p-fixed-banner__btn" data-gtm-click="cta-fixed-sp" data-gtm-tel="fixed-sp">診断を予約する</a>
-  </div>
 
   <!-- JS -->
   <script src="js/main.js"></script>
