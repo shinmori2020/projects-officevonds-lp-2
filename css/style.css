@@ -1173,6 +1173,11 @@ a {
   overflow: visible;
 }
 
+.p-results__img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 600px) {
   .p-results {
     padding-left: 0;
