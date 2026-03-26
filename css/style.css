@@ -588,7 +588,7 @@ a {
 .p-chain {
   position: relative;
   overflow: hidden;
-  background: url('../images/bg_01.png') center / cover no-repeat;
+  background: url('../images/bg_01.webp') center / cover no-repeat;
 }
 
 .p-chain__overlay {
@@ -915,7 +915,7 @@ a {
 .p-compare__lower {
   position: relative;
   overflow: hidden;
-  background: url('../images/bg_03.png') center / cover no-repeat;
+  background: url('../images/bg_03.webp') center / cover no-repeat;
 }
 
 .p-compare__lower-overlay {
@@ -1215,7 +1215,7 @@ a {
 .p-cta2 {
   position: relative;
   overflow: hidden;
-  background: url('../images/bg_04.png') center / cover no-repeat;
+  background: url('../images/bg_04.webp') center / cover no-repeat;
 }
 
 .p-cta2__overlay {
@@ -1371,7 +1371,7 @@ a {
 /* ----- よくある質問 ----- */
 .p-faq {
   background-color: #F5F5F5;
-  background-image: url('../images/bg_logo.png');
+  background-image: url('../images/bg_logo.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 400px auto;
