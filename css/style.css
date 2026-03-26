@@ -1751,6 +1751,89 @@ a {
   opacity: 0.8;
 }
 
+/* =============================================
+   PC固定サイドナビ
+   ============================================= */
+.l-side-nav {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .l-side-nav {
+    display: block;
+  }
+
+  .l-side-nav__left {
+    position: fixed;
+    left: calc((100vw - 640px) / 4);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+
+  .l-side-nav__logo {
+    width: clamp(200px, 22vw, 350px);
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(60%) sepia(50%) saturate(600%) hue-rotate(300deg);
+  }
+
+  .l-side-nav__right {
+    position: fixed;
+    right: calc((100vw - 640px) / 4);
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    border-radius: 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .l-side-nav__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .l-side-nav__heading {
+    font-size: clamp(0.875rem, 1.2vw, 1.5rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 12px;
+  }
+
+  .l-side-nav__links a {
+    font-size: clamp(0.75rem, 1vw, 1.125rem);
+    font-weight: 700;
+    color: var(--color-text-light);
+    text-decoration: none;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .l-side-nav__links a::before {
+    content: "›";
+    font-size: 1.4em;
+    color: var(--color-primary);
+    line-height: 0;
+    transform: translateY(-2px);
+  }
+
+  .l-side-nav__links a:hover {
+    color: var(--color-primary);
+  }
+
+  .l-side-nav__sns {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+  }
+}
+
 .u-font-mincho {
   font-family: var(--font-family-mincho);
 }
