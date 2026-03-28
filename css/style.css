@@ -1736,7 +1736,13 @@ a {
   background-color: var(--color-bg-dark);
   color: var(--color-text-white);
   text-align: center;
-  padding: 24px var(--container-padding);
+  padding: 24px var(--container-padding) 90px;
+}
+
+@media (min-width: 641px) {
+  .l-footer__bottom {
+    padding: 24px var(--container-padding) 24px;
+  }
 }
 
 .l-footer__shop-name {
@@ -1841,6 +1847,47 @@ a {
 
 .u-font-mincho {
   font-family: var(--font-family-mincho);
+}
+
+/* =============================================
+   SP固定バナー
+   ============================================= */
+.p-fixed-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.p-fixed-banner__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 18px;
+  background-color: #EC77AB;
+  color: var(--color-text-white);
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 641px) {
+  .p-fixed-banner {
+    display: none;
+  }
+}
+
+/* ----- Google Map iframe ----- */
+.p-shop-map__iframe {
+  margin-top: 16px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /* =============================================
